@@ -1,0 +1,745 @@
+from Harsha Yerasi to Presenter (privately):
+I have run the code using GPU and CPU and I observd that my CPU is performing faster than GPU....then when we are concerned about GPU?
+from Shantanu to All Participants:
+I have run the code using GPU and CPU and I observd that my CPU is performing faster than GPU....then when we are concerned about GPU?
+from Harsha Yerasi to Presenter (privately):
+60,000 rows is small data?
+from Harsha Yerasi to Presenter (privately):
+okay
+from Harsha Yerasi to Presenter (privately):
+Okay..!
+from Harsha Yerasi to Presenter (privately):
+By the end of the course would you give us all the best algorithms available in keras?
+from Harsha Yerasi to Presenter (privately):
+How many we have ?
+from Shantanu to All Participants:
+Computation
+from Shantanu to All Participants:
+Calculation -> Variabl
+from Shantanu to All Participants:
+e
+from Shantanu to All Participants:
+Probability
+from Shantanu to All Participants:
+Context
+from Shantanu to All Participants:
+Graph Calculations
+from Shantanu to All Participants:
+[ 1, 2 , 4]
+from Shantanu to All Participants:
+1 2 3
+from Shantanu to All Participants:
+Activation Function
+from Shantanu to All Participants:
+Square
+from Shantanu to All Participants:
+1 4 9
+from Shantanu to All Participants:
+[1, 2, 3] -> [ 1, 4, 9]
+from Shantanu to All Participants:
+1. lack of data 
+from Shantanu to All Participants:
+complete the data
+from Shantanu to All Participants:
+Age 25 > 0.9 Probability liked Beaches 
+from Shantanu to All Participants:
+Age 25 < 0.9 Probability like hills
+from Shantanu to All Participants:
+22 
+from Shantanu to All Participants:
+0.9 -> hills
+from Shantanu to All Participants:
+Machine Learning 
+from Shantanu to All Participants:
+Predicting New Data
+from Shantanu to All Participants:
+Equation that can continue my graph
+from Shantanu to All Participants:
+Graph
+from Shantanu to All Participants:
+Based on this graph, we form an equation
+from Shantanu to All Participants:
+Graph -> Points 
+from Shantanu to All Participants:
+Points connected by lines
+from Shantanu to All Participants:
+Graph -> Computational Graphs
+from Shantanu to All Participants:
+Points -> Nodes or Neurons
+from Shantanu to All Participants:
+lines -> weight
+from Shantanu to All Participants:
+Nodes towards the starting -> INPUT 
+from Shantanu to All Participants:
+Data
+from Shantanu to All Participants:
+Nodes towards the end -> Output
+from Shantanu to All Participants:
+Data
+from Shantanu to All Participants:
+1 Node -> One Output
+from Shantanu to All Participants:
+Multi Nodes -> This is a classification problem, many classes each representing probability
+from Shantanu to All Participants:
+Nodes -> Either they can represent data, which is towards starting and end
+from Shantanu to All Participants:
+or, they can represent an ACTION on the previous node
+from Shantanu to All Participants:
+Classification
+from Shantanu to All Participants:
+We have 2 input node(2, 1), is this possible to add any other input at the node where we have value 6(i.e. 2nd hidden layer).
+from Shantanu to All Participants:
+Gradient Descent is an algorithm to gradually descend on this curve
+from Shantanu to All Participants:
+and keep descending till I find a local minima
+from Shantanu to All Participants:
+there my be multiple min/mx in a function.
+from Shantanu to All Participants:
+That is why we arrived at local minima
+from Shantanu to All Participants:
+[ 0 
+from Shantanu to All Participants:
+[ 0.001, 0.002.... 0.967]
+from Shantanu to All Participants:
+can we use imbd mails data set to classify mails... 
+from aditi to Shantanu (privately):
+i mean whether they are complaining about computers
+from aditi to Shantanu (privately):
+bikes
+
+from Shantanu to All Participants:
+Amazon/Flipkart Customer Reviews
+from Shantanu to All Participants:
+Strings movie reviews
+from Shantanu to All Participants:
+Pixels -> can't be seen except in numbers
+from Shantanu to All Participants:
+We are downloading 10000 words but how these going to be unique without any particular operation performed. 
+
+from Shantanu to All Participants:
+17464789
+from Shantanu to All Participants:
+Movie Reviews downloaded
+from Shantanu to All Participants:
+Each of this is a sentence
+from Shantanu to All Participants:
+This is a very bad movie, no body danced
+from Shantanu to All Participants:
+(This,0)
+from Shantanu to All Participants:
+(is, 0)
+from Shantanu to All Participants:
+(a, 0)
+from Shantanu to All Participants:
+(This, 1)
+from Shantanu to All Participants:
+(is, 1)
+from Shantanu to All Participants:
+(a, 1)
+from Shantanu to All Participants:
+(very, 1)
+from Shantanu to All Participants:
+This is a very bad movie
+from Shantanu to All Participants:
+This is a very good movie
+from Shantanu to All Participants:
+(This, 2)
+from Shantanu to All Participants:
+(is, 2)
+from Shantanu to All Participants:
+(a, 2)
+from Shantanu to All Participants:
+movie,2
+from Shantanu to All Participants:
+BigData
+from Shantanu to All Participants:
+Machine Learning has hidden this from all of us
+from Shantanu to All Participants:
+https://github.com/apache/spark/blob/master/examples/src/main/python/wordcount.py
+from Shantanu to All Participants:
+load_data()
+from Shantanu to All Participants:
+num_words
+from Shantanu to All Participants:
+if(num_words == undef) // do nothing
+from Shantanu to All Participants:
+else { 10,000 // do ops}
+from Shantanu to All Participants:
+Python Abstracts these hidden operations
+from Shantanu to All Participants:
+bigData
+from Shantanu to All Participants:
+Vectors -> Graph, number with direction
+from Shantanu to All Participants:
+import tensorflow as tf
+from tensorflow import keras
+import numpy as np
+print(tf.__version__)
+#IMDB -> Internet Movies DB
+imdb = keras.datasets.imdb
+# -> Two Objects -> Training Object, Test Object
+# Training Object -> data [numerical], label[numerical]
+# Test Object -> Data[number], label[number]
+# (traindata, train label), (test data, test label) = load_data
+# a,b = 1,2
+(train_data, train_labels), (test_data, test_labels) = imdb.load_data(num_words=10000)
+# IMDB data sets will be parsed, and keeps the top 10,000 most frequently occuring words in the training data -> creating a little bias (help us train our data better)
+print("Training : {}, : {}".format(len(train_data), len(test_data)))
+# Hello Mr. Orange. How is Mrs. Orange doing? 
+# Hello -> 0 Mr.-> 1 Orange. -> 2 How -> 3 is->4 Mrs.->5 Orange->6 doing?->7 your->8 pet?->9
+# [ 0 1 2 3 4 5 6 7] 
+# How is your pet?
+# [ 3 4 8 9] 
+
+from Harsha Yerasi to Presenter (privately):
+is it possible to see those words?
+from Shantanu to All Participants:
+Emtion_angry
+from Shantanu to All Participants:
+https://github.com/apache/spark/blob/master/examples/src/main/python/wordcount.py
+from Shantanu to All Participants:
+Tensors
+from Shantanu to All Participants:
+[1 , 2, 3]
+from Shantanu to All Participants:
+[ This is a good movie ]
+from Shantanu to All Participants:
+[ 12 13 14 15]
+from Shantanu to All Participants:
+[3,1]
+from Shantanu to All Participants:
+[ 0 1 ]
+from Shantanu to All Participants:
+[ 0 0 0 1 0 0 0 0 0 0 ]
+from Shantanu to All Participants:
+[ 0 1 0 0 0 0 0 0 0]
+from Shantanu to All Participants:
+Dense Networks
+from Shantanu to All Participants:
+num_words * num_reviews size matrix
+from Shantanu to All Participants:
+a
+from Shantanu to All Participants:
+num_reviews
+from Shantanu to All Participants:
+THIS IS VERY MEMORY INTENSIVE
+from Shantanu to All Participants:
+this is a small review
+from Shantanu to All Participants:
+This is a very very large review made of many sentences]
+from Shantanu to All Participants:
+[ 34 1 12 13 6 ]
+from Shantanu to All Participants:
+[34 1 12 7 7 14 23... 24]
+from Shantanu to All Participants:
+[34 1 12 13 6 0 0...0]
+from Shantanu to All Participants:
+PAD the matrix
+from Shantanu to All Participants:
+PADDING THE MATRIX with 0s to make size of tensors equal
+from Shantanu to All Participants:
+reversed word index usually starts with -1 correct ?
+from Shantanu to All Participants:
+if i was picking the last item
+from Shantanu to All Participants:
+i could have used -1
+from Shantanu to All Participants:
+if < small
+from Shantanu to All Participants:
+if<PAD><PAD><PAD> = small
+from Shantanu to All Participants:
+if000 = small
+from Harsha Yerasi to Presenter (privately):
+Understood
+from Shantanu to All Participants:
+reverse_word_index = dict([(value, key) for (key,value) in word_index.items()])
+def decode_review(text):
+    return ' '.join([reverse_word_index.get(i, '?') for i in text])
+result = decode_review(train_data[0])
+print(result)
+from Harsha Yerasi to Presenter (privately):
+How can we decide the max length ?
+from Shantanu to All Participants:
+longest sentence shouldn't have padding
+from Shantanu to All Participants:
+longest sentence was 500 words
+from Shantanu to All Participants:
+500
+from Shantanu to All Participants:
+longest sentence 10, words, padding=10
+from Harsha Yerasi to Presenter (privately):
+prior i have to find the long senstence
+from Harsha Yerasi to Presenter (privately):
+?
+from Shantanu to All Participants:
+1024
+from Shantanu to All Participants:
+Memory
+from Harsha Yerasi to Presenter (privately):
+okay
+from Harsha Yerasi to Presenter (privately):
+Also can you give the code to find the max length senstence in a dataset
+from Harsha Yerasi to Presenter (privately):
+Thank you.
+from Harsha Yerasi to Presenter (privately):
+What is the preferrable ram to perform the training without compromising?
+from Harsha Yerasi to Presenter (privately):
+i am here
+from Shantanu to All Participants:
+Cloud 
+from Shantanu to All Participants:
+On Premises 
+from Shantanu to All Participants:
+Scale Up Down
+from Shantanu to All Participants:
+DB -> 100 GB
+from Shantanu to All Participants:
+64
+from Shantanu to All Participants:
+Spark 
+from Shantanu to All Participants:
+256 GB RAM
+from Shantanu to All Participants:
+32 GB
+from Shantanu to All Participants:
+32 GB MAX DATA loaded into a 64 GB Machine
+from Harsha Yerasi to Presenter (privately):
+Is this data distribution using spark is easy or a compllicated concept?
+from Shantanu to All Participants:
+Azure -> HDInsight
+from Shantanu to All Participants:
+AWS -> EMR
+from Harsha Yerasi to Presenter (privately):
+Okay...!
+from Shantanu to All Participants:
+reverse_word_index = dict([(value, key) for (key,value) in word_index.items()])
+def decode_review(text):
+    return ' '.join([reverse_word_index.get(i, '?') for i in text])
+
+
+result = decode_review(train_data[0])
+print(result)
+train_data = keras.preprocessing.sequence.pad_sequences(train_data, value=word_index["<PAD>"], padding='post', maxlen=256)
+test_data = keras.preprocessing.sequence.pad_sequences(test_data, value=word_index["<PAD>"], padding='post', maxlen=256)
+print(len(train_data[0]))
+print(len(train_data[1]))
+from Shantanu to All Participants:
+1 D -> Array
+from Shantanu to All Participants:
+2 D -> Image
+from Shantanu to All Participants:
+Tensors -> 1 D
+from Shantanu to All Participants:
+List
+from Shantanu to All Participants:
+The neural network is created by stacking layers
+from Shantanu to All Participants:
+1. How many to use?
+from Shantanu to All Participants:
+2. How many hidden units to use for each layer?
+from Shantanu to All Participants:
+1 -> one type of review, 0 -> type of review
+from Harsha Yerasi to Presenter (privately):
+how we can decide that there are only two outputs
+from Harsha Yerasi to Presenter (privately):
+like 0 or 1
+from Shantanu to All Participants:
+Provided
+from Shantanu to All Participants:
+Ram Prasad is a good boy
+from Shantanu to All Participants:
+Monkey2 is a bad boy
+from Shantanu to All Participants:
+(Ram ..., 8)
+from Shantanu to All Participants:
+(mon... 9)
+from Shantanu to All Participants:
+Positive 1
+from Shantanu to All Participants:
+Negative 0
+from Shantanu to All Participants:
+S1 1
+from Shantanu to All Participants:
+S2 1
+from Shantanu to All Participants:
+S3 0
+from Shantanu to All Participants:
+S4 0
+from Shantanu to All Participants:
+S934
+from Shantanu to All Participants:
+1 or 0
+from Harsha Yerasi to Presenter (privately):
+Okay....!
+from Shantanu to All Participants:
+strings
+from Shantanu to All Participants:
+Remove them
+from Shantanu to All Participants:
+transform them into trainable
+from Shantanu to All Participants:
+The resulting dimensions are: (batch, sequence, embedding)
+from Shantanu to All Participants:
+The first layer is an Embedding layer. This layer takes the integer-encoded vocabulary and looks up the embedding vector for each word-index. These vectors are learned as the model trains. The vectors add a dimension to the output array. 
+from Shantanu to All Participants:
+Tensors have been already been made of same length
+from Shantanu to All Participants:
+256
+from Shantanu to All Participants:
+512
+from Shantanu to All Participants:
+1024
+from Shantanu to All Participants:
+5
+from Shantanu to All Participants:
+Next, a GlobalAveragePooling1D layer returns a fixed-length output vector for each example by averaging over the sequence dimension. This allows the model to handle input of variable length, in the simplest way possible.
+from Shantanu to All Participants:
+https://en.wikipedia.org/wiki/Sigmoid_function
+from Shantanu to All Participants:
+| sigmoid () |
+from Shantanu to All Participants:
+0 OR 1
+from Shantanu to All Participants:
+sigmoid ()
+from Shantanu to All Participants:
+0 and 1
+from Shantanu to All Participants:
+1
+from Shantanu to All Participants:
+10
+from Shantanu to All Participants:
+The number of outputs (units, nodes, or neurons) is the dimension of the representational space for the layer. the amount of freedom the network is allowed when learning an internal representation.
+from Shantanu to All Participants:
+more are the layers, more complex is neuron's understanding
+from Shantanu to All Participants:
+If you put too many layers
+from Shantanu to All Participants:
+the model is going to be biased towards your training data
+from Shantanu to All Participants:
+PERFECT
+from Shantanu to All Participants:
+Overfitted
+from Shantanu to All Participants:
+If a model has more hidden units (a higher-dimensional representation space), and/or more layers, then the network can learn more complex representations. However, it makes the network more computationally expensive and may lead to learning unwanted patterns—patterns that improve performance on training data but not on the test data. This is called overfitting, and we'll explore it later.
+
+from Shantanu to All Participants:
+Trignometry, calculus, Game theory
+from Shantanu to All Participants:
+Combinatorics
+from Shantanu to All Participants:
+Game Theory
+from Shantanu to All Participants:
+Temperature tomorrow
+from Shantanu to All Participants:
+Loss Function and Optimizers
+from Shantanu to All Participants:
+i should be able to UPGRADE
+from Shantanu to All Participants:
+LOSS FUNCTION
+from Shantanu to All Participants:
+MINIMIZE this LOSS FUNCTION
+from Shantanu to All Participants:
+OPTIMIZE -> Decreases the LOSS FUnction
+from Shantanu to All Participants:
+1 + 1 = 9
+from Shantanu to All Participants:
+1 + 1 = 2
+from Shantanu to All Participants:
+1 + 1 = 9 
+from Shantanu to All Participants:
+1 + 1 = 5
+from Shantanu to All Participants:
+1 + 1 = 3
+from Shantanu to All Participants:
+1 + 1 = 2
+from Shantanu to All Participants:
+Probability -> A Single-unit Lyaer with a sigmoid f()
+from Shantanu to All Participants:
+layer
+from Shantanu to All Participants:
+binary_crossentropy
+from Harsha Yerasi to Presenter (privately):
+sparse_categorical_crossentropy
+from Shantanu to All Participants:
+Multiple Classes -> sparse_cat_cross
+from Shantanu to All Participants:
+binary_crossentropy
+from Shantanu to All Participants:
+mean_squared_error
+from Harsha Yerasi to Presenter (privately):
+difference between metric and metrics?
+from Shantanu to All Participants:
+metrics
+from Shantanu to All Participants:
+TEST Data should be used ONLY ONCE
+from Shantanu to All Participants:
+Training DATA
+from Shantanu to All Participants:
+vocab_size = 10000
+model = keras.Sequential()
+model.add(keras.layers.Embedding(vocab_size,16))
+model.add(keras.layers.GlobalAveragePooling1D())
+model.add(keras.layers.Dense(16, activation=tf.nn.relu))
+model.add(keras.layers.Dense(1, activation = tf.nn.sigmoid))
+model.summary()
+
+
+model.compile(optimizer=tf.train.AdamOptimizer(), loss='binary_crossentropy', metrics=['accuracy'])
+
+
+x_val = train_data[:10000]
+partial_x_train = train_data[10000:]
+y_val = train_labels[:10000]
+partial_y_train = train_labels[10000:]
+from Harsha Yerasi to Presenter (privately):
+train_data.shape --> this gave me 25000,  We have to take 70% as training data correct?
+from Shantanu to All Participants:
+train_data.shape --> this gave me 25000,  We have to take 70% as training data correct?
+
+from Harsha Yerasi to Presenter (privately):
+Okay
+from Shantanu to All Participants:
+Test Data -> very large = low accuracy
+from Harsha Yerasi to Presenter (privately):
+Okay
+from Shantanu to All Participants:
+they are all now tensors
+from Shantanu to All Participants:
+1 D list 
+from Harsha Yerasi to Presenter (privately):
+epochs is hidden layers in the layers between input and output correct?
+from Shantanu to All Participants:
+epoch is no. of times the data will be passed through my network
+from Shantanu to All Participants:
+epochs is hidden layers in the layers between input and output correct?
+
+from Shantanu to All Participants:
+epoch -> timeline
+from Shantanu to All Participants:
+prehistoic, jurrasic
+from Harsha Yerasi to Presenter (privately):
+okay
+from Harsha Yerasi to Presenter (privately):
+so the loss function will update for each epoch correct?
+from Shantanu to All Participants:
+Every Epoch-> Optimization f() observes and fixes the loss f()
+from Shantanu to All Participants:
+For every Epoch-> Accuracy should increase
+from Shantanu to All Participants:
+Loss Function should decrease
+from Harsha Yerasi to Presenter (privately):
+yes
+from Shantanu to All Participants:
+95 % 
+from Harsha Yerasi to Presenter (privately):
+with 80 epoches i got acc: 0.9776
+from Shantanu to All Participants:
+Overfitting
+from Harsha Yerasi to Presenter (privately):
+so what is best size for epochs?
+from Shantanu to All Participants:
+300 epochs -> .90
+from Harsha Yerasi to Presenter (privately):
+okay
+from Shantanu to All Participants:
+Bad Algorithms will give you right results
+from Shantanu to All Participants:
+x_val = train_data[:10000]
+partial_x_train = train_data[10000:]
+y_val = train_labels[:10000]
+partial_y_train = train_labels[10000:]
+#Train the model
+history = model.fit(partial_x_train, partial_y_train, epochs=40, batch_size=512, validation_data=(x_val,y_val), verbose=1)
+# Evaluate the model
+results = model.evaluate(test_data, test_labels)
+print(results)
+
+from Harsha Yerasi to Presenter (privately):
+So i need  to take different algorithms and check with all the epochs using gridsearch
+from Shantanu to All Participants:
+So i need  to take different algorithms and check with all the epochs using gridsearch
+
+from Harsha Yerasi to Presenter (privately):
+please provide us the best algorithms that fits the most of the data like Xgboost in ML
+from Shantanu to All Participants:
+please provide us the best algorithms that fits the most of the data like Xgboost in ML
+
+from Harsha Yerasi to Presenter (privately):
+Okay cool
+from Shantanu to All Participants:
+K-means
+from Shantanu to All Participants:
+Isolation Forests
+from Harsha Yerasi to Presenter (privately):
+Okay
+from Shantanu to All Participants:
+Legend -> blue traing acc, line validation acc
+from Harsha Yerasi to Presenter (privately):
+import matplotlib.pyplot as plt
+from Shantanu to All Participants:
+blue dot 
+from Shantanu to All Participants:
+blue one
+from Harsha Yerasi to Presenter (privately):
+share the code i will check here
+from Harsha Yerasi to Presenter (privately):
+just the plot lines
+from Shantanu to All Participants:
+import matplotlib.pyplot as plt
+acc = history.history['acc']
+val_acc = history.history['val_acc']
+loss = history.history['loss']
+val_loss = history.history['val_loss']
+epochs = range(1, len(acc) + 1)
+plt.plot(epochs, loss, 'bo', label='Training loss')
+plt.plot(epochs, val_loss, 'b', label='Validation loss')
+plt.xlabel('Epochs')
+plt.ylabel('Loss')
+plt.legend()
+plt.show()
+
+from Harsha Yerasi to Presenter (privately):
+Its working here
+from Shantanu to All Participants:
+plt.clf()   # clear figure
+acc_values = history_dict['acc']
+val_acc_values = history_dict['val_acc']
+plt.plot(epochs, acc, 'bo', label='Training acc')
+plt.plot(epochs, val_acc, 'b', label='Validation acc')
+plt.title('Training and validation accuracy')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+from Shantanu to All Participants:
+plt.clf()   # clear figure
+acc_values = history_dict['acc']
+val_acc_values = history_dict['val_acc']
+plt.plot(epochs, acc, 'bo', label='Training acc')
+plt.plot(epochs, val_acc, 'b', label='Validation acc')
+plt.title('Training and validation accuracy')
+plt.xlabel('Epochs')
+plt.ylabel('Accuracy')
+plt.legend()
+plt.show()
+
+from Shantanu to All Participants:
+1. Classification for Text
+from Shantanu to All Participants:
+Plot -> Accuracy and LOSS
+from Shantanu to All Participants:
+.Predict( )
+from Shantanu to All Participants:
+.fit ( ) -> train
+from Shantanu to All Participants:
+.evaluate ( ) -> find how accurate are we on training data?
+from Shantanu to All Participants:
+.predict
+from Harsha Yerasi to Presenter (privately):
+test_loss, test_acc = model.evaluate(test_images, test_labels)
+from Shantanu to All Participants:
+predictions = model.predict(more_text)
+
+from Shantanu to All Participants:
+more_text = [ " This is a very bad movie" ]
+from Shantanu to All Participants:
+Shantanu, as requested at the begening of the session, we still do not have the environment to practice. I do not think we would gain anything without a little practice. Also please share the file.
+
+from Harsha Yerasi to Presenter (privately):
+I am using ananconda and jupyter notebook
+from Harsha Yerasi to Presenter (privately):
+its eay
+from Harsha Yerasi to Presenter (privately):
+what will we use at production level?
+from Shantanu to All Participants:
+Production -> C++, C#, NodeJS
+from Shantanu to All Participants:
+Python, R, Octave -> Prototyping
+from Shantanu to All Participants:
+C++, Java, Scala, C#, NodeJS -> Production
+from Harsha Yerasi to Presenter (privately):
+generally we give the joblibs generated .ml file for production correct?
+from Shantanu to All Participants:
+c++ -> .h
+from Harsha Yerasi to Presenter (privately):
+okay...
+from Harsha Yerasi to Presenter (privately):
+what about java?
+from Shantanu to All Participants:
+JAR
+from Harsha Yerasi to Presenter (privately):
+okay...!
+from Shantanu to All Participants:
+ow about SAS?
+from Harsha Yerasi to Presenter (privately):
+Can I share the code through mail to all of them
+from Harsha Yerasi to Presenter (privately):
+?
+from Shantanu to All Participants:
+https://1drv.ms/t/s!AhM-uOEWdqAeqGB8twIPo6NBtrty
+from Shantanu to All Participants:
+Scala
+from Shantanu to All Participants:
+C++
+from Shantanu to All Participants:
+C#
+from Shantanu to All Participants:
+Data Scientist 
+from Harsha Yerasi to Presenter (privately):
+The link you shared has an empty file.
+from Harsha Yerasi to Presenter (privately):
+working
+from Shantanu to All Participants:
+https://1drv.ms/t/s!AhM-uOEWdqAeqGB8twIPo6NBtrty
+from Harsha Yerasi to Presenter (privately):
+I have some doubt with yesterday session -->  train_images = train_images / 255.0 --> Does this makes the images black and white.
+from Shantanu to All Participants:
+I have some doubt with yesterday session -->  train_images = train_images / 255.0 --> Does this makes the images black and white.
+from Harsha Yerasi to Presenter (privately):
+okay
+from Shantanu to All Participants:
+0 - 1
+from Shantanu to All Participants:
+0 - 255
+from Harsha Yerasi to Presenter (privately):
+I skipped this step and performed the training but there is no change in time for training
+from Harsha Yerasi to Presenter (privately):
+255 is pixel size?
+from Shantanu to All Participants:
+28 X 28
+from Shantanu to All Participants:
+28 * 28
+from Shantanu to All Participants:
+254 / 255 = 0 and 1
+from Shantanu to All Participants:
+222 / 255 =0 and 1
+from Harsha Yerasi to Presenter (privately):
+just like using <PAD>
+from Shantanu to All Participants:
+Our objective is to have all values scaled between 0 and 1
+from Shantanu to All Participants:
+0 and 78
+from Shantanu to All Participants:
+/79
+from Shantanu to All Participants:
+/1024
+from Shantanu to All Participants:
+0 and 1
+from Shantanu to All Participants:
+SCALING
+from Harsha Yerasi to Presenter (privately):
+Okay
+from Harsha Yerasi to Presenter (privately):
+I am preparing for certified data scientist do you suggest me something.
+from Shantanu to Harsha Yerasi (privately):
+Data Camp
+from Harsha Yerasi to Presenter (privately):
+Okay..!
+from Shantanu to All Attendees:
+JARGON and MATH
+from Harsha Yerasi to Presenter (privately):
+Thank you Shantanu
+from RPS Consulting Pvt Ltd Hyderabad to All Attendees:
+please give your valuable feedback about todays session 
+from Harsha Yerasi to Presenter (privately):
+Please give me the code to calculate the largest size in a dataset.
