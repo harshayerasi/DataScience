@@ -1,0 +1,2 @@
+SVM and Logistic regression are linear classification models 
+Navie bayes, Decision tree, Randomforest, KNN, Kernal SVM are non-linear classification models.
